@@ -1,0 +1,41 @@
+{
+  "name": "@vatmena/vatsim-lucia",
+  "version": "1.0.0",
+  "description": "VATSIM Integration for Lucia",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "type": "module",
+  "files": [
+    "./dist/"
+  ],
+  "scripts": {
+    "build": "shx rm -rf ./dist/* && tsc"
+  },
+  "keywords": [
+    "lucia",
+    "lucia",
+    "authentication",
+    "auth",
+    "oauth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VATMENA/vatsim-lucia"
+  },
+  "author": "samhep0803",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@lucia-auth/oauth": "^2.0.1",
+    "@types/node": "^20.4.5",
+    "lucia": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "@lucia-auth/oauth": "latest",
+    "lucia": "^2.0.0"
+  }
+}
